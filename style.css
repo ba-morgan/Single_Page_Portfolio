@@ -1,0 +1,191 @@
+/* #### Fonts, If Any #### */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+/* #### Reset CSS #### */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* #### Body #### */
+body {
+  font-family: "Helvetica";
+  background-color: #eeeeee;
+
+  /* background-image: url(./images/clouds_cropped_FullHD.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* background: linear-gradient(to bottom, #6da8b8, #5a80a4); */
+}
+.container {
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 42vh 5vh 42vh;
+
+  /* Grid Areas */
+  grid-template-areas:
+    "sect_1 sect_2 sect_3"
+    "contact contact contact "
+    "sect_4 sect_5 sect_6";
+
+  grid-gap: 0.8rem;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0.8rem;
+  color: #eaeff2;
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid; */
+  text-align: justify;
+  color: black;
+}
+
+mark {
+  color: #478091;
+  /* font-size: 2.2rem; */
+  font-weight: bold;
+  background-color: transparent;
+  text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.285);
+}
+.textBox h1 {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
+}
+.textBox h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #478091;
+  /* letter-spacing: 0.4rem; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
+}
+.textBox p {
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.2rem;
+}
+
+section h4 {
+  display: block;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  writing-mode: vertical-lr;
+  /* border-radius: 0.4rem; */
+  /* transform: rotate(90deg); */
+}
+.sect_3 h4 {
+  padding: 0.5rem 1.2rem 0.5rem 0;
+}
+.sect_1 {
+  grid-area: sect_1;
+  background-color: #7d8c87;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.sect_2 {
+  grid-area: sect_2;
+}
+.sect_3 {
+  grid-area: sect_3;
+  background-color: #7d8c87;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.sect_4 {
+  grid-area: sect_4;
+}
+.sect_5 {
+  grid-area: sect_5;
+  background-color: #7f989f;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.sect_6 {
+  grid-area: sect_6;
+}
+
+.contact {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+  grid-area: contact;
+  background-color: #478091;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+}
+.contactIcons {
+  text-decoration: none;
+  font-weight: normal;
+  transition: ease-in-out 0.2s;
+}
+
+.contactIcons a {
+  color: #eaeff2;
+  text-decoration: none;
+}
+.contactIcons:hover {
+  font-weight: bold;
+  transform: translateX(0.4rem);
+}
+
+img,
+a {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 0.8rem;
+}
+.image {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 100%;
+  padding: 0.6rem;
+
+  transition: ease-in-out 0.2s;
+}
+.image:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Settings Using Media Query */
+
+/* @media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+
+    grid-template-areas: "nav" "side" "main" "content1" "content2" "content3" "footer";
+  }
+} */
