@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- #### Favourite Icon #### -->
+    <!-- #### Favourite Icon Image #### -->
     <link
       rel="shortcut icon"
       href="./images/favicon.ico"
       type="Favourite icon"
     />
-    <!-- #### Font Awesome V5.0 Latest #### -->
+    <!-- #### Font Awesome V5 & V6 Links #### -->
     <script
       src="https://kit.fontawesome.com/891cde5a15.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9c406554d7.js"
       crossorigin="anonymous"
     ></script>
 
@@ -24,10 +28,13 @@
 
   <body>
     <main class="container">
+      <!-- ##########   Portfolio Project Link  ########## -->
       <section class="sect_1">
-        <div class="image one">
-          <img src="./images/portfolio_300px.jpg" />
-          <h4>Portfolio</h4>
+        <div class="image one con-tooltip imagebottom">
+          <a href="https://www.github.com" target="_blank">
+            <img src="./images/portfolio_300px.jpg" /></a
+          ><span class="imagetooltip">Coming Soon !</span>
+          <h2>Portfolio</h2>
         </div>
       </section>
       <section class="sect_2">
@@ -35,96 +42,133 @@
           <h1>MORGAN</h1>
           <h3>Web Development</h3>
           <br />
+          <!-- ##########   Profile Section ########## -->
           <p>
-            A creative Full Stack Web Developer, with a life long
-            <mark>Passion for Learning</mark>.
+            Hello I'm Byron, a Creative & Adaptable Web Developer
+            (<mark>MERN</mark>). <br />
           </p>
           <p>
-            &emsp; I am naturally able to quickly & effectively fit into and
-            work with a wide variety of <mark>Project Team</mark>.
+            I am keen to secure an <mark>Interesting Position</mark> & broaden
+            my development skills.
           </p>
           <p>
-            &emsp; My varied background & experience has helped me become an
-            <mark>Excellent Problem Solver</mark>, able to effectively
-            contribute to any project group or collaboration.
+            My varied background & experience has helped me become an
+            <mark>Effective Problem Solver</mark>, able to contribute to a
+            variety of collaborative projects.
           </p>
           <p>
-            &emsp;Feel free to check out some <mark>Live Demo's</mark> of my
-            work via the links provided.
+            Please feel free to check out some <mark>Live Demo's</mark> of my
+            work or view the code directly on my <mark> Github page</mark>.
           </p>
         </section>
       </section>
+      <!-- ##########   Shop Project Link  ########## -->
       <section class="sect_3">
         <div class="image three">
-          <h4>Shop</h4>
-          <a href="https://www.w3schools.com" target="_blank">
+          <h2>Shop</h2>
+          <a href="https://www.github.com" target="_blank">
             <img src="./images/e_comerce_300px.jpg" />
           </a>
         </div>
       </section>
+      <!-- ##########   Contact Section  ########## -->
       <section class="contact">
         <div>Let's Connect :</div>
-        <div class="contactIcons">
-          <a href="mailto:info@greatsite.com"
-            ><i class="fas fa-envelope"></i
-          ></a>
+        <div class="contactsContainer">
+          <div class="contactIcons con-tooltip bottom">
+            <!--#### Can also use a "formsubmit.co" email link instead of "Mailto:" ####-->
+            <a href="https://formsubmit.co/el/dexama" target="_blank"
+              ><i class="fa-solid fa-envelope"></i></a
+            ><span class="tooltip">Send Me an Email</span>
+          </div>
+          <div class="contactIcons con-tooltip bottom">
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i></a
+            ><span class="tooltip">Visit My LinkedIn Page</span>
+          </div>
+          <div class="contactIcons con-tooltip bottom">
+            <a href="https://www.github.com" target="_blank">
+              <i class="fa-brands fa-github"></i></a
+            ><span class="tooltip">Visit My GitHub Page</span>
+          </div>
         </div>
-        <div class="contactIcons">
-          <a href="https://www.linkedin.com" target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
-        <div class="contactIcons"><i class="fab fa-github"></i></div>
-        <div class="contactIcons"><i class="fab fa-instagram"></i></div>
-        <div class="contactIcons"><i class="fab fa-twitter"></i></div>
         <div class="copyright">&copy; Morgan Web Development 2022</div>
       </section>
-
+      <!-- ##########   Skills Section  ########## -->
       <section class="sect_4">
         <section class="textBox">
-          <h1>SKILLS</h1>
+          <h1>Skills</h1>
           <br />
           <p>
-            As highly motivated Developer I have enjoyed
-            <mark> learning & continuing</mark> to develop my Skills & Expertise
-            in the following areas :
+            Freshly Qualified, having completed a
+            <mark>1-Year Full-Time </mark> Intensive web development course, at
+            the <mark>DCI, Berlin</mark>. <br />
+            &emsp;I'm currently working hard on a <mark>2-Month</mark> long,
+            full-stack MERN team project.
           </p>
-          <p>
-            <mark>LANGUAGES :</mark> &emsp;<i class="fab fa-js"></i>&nbsp; JAVA
-            SCRIPT &emsp;<i class="fab fa-html5"></i>&nbsp; HTML 5 &emsp;
-            <i class="fab fa-css3"></i>&nbsp; CSS 3
-          </p>
-          <p>
-            <mark>FRAMEWORKS :</mark> &emsp;
-            <i class="fab fa-react"></i> &nbsp;REACT &emsp;
-            <i class="fab fa-node-js"></i>&nbsp; NODE JS &emsp;
-            <i class="fab fa-bootstrap"></i> &nbsp;BOOTSTRAP
-          </p>
+          <div class="skillslist">
+            <p>
+              <br />
+              <mark>LANGUAGES :&emsp;</mark>&emsp;<i class="fab fa-js"></i
+              >&nbsp; JavaScript&emsp;&emsp;<i class="fab fa-html5"></i
+              >&nbsp;HTML 5&emsp;&emsp; <i class="fab fa-css3"></i>&nbsp;CSS 3
+            </p>
+            <p>
+              <mark>FRAMEWORKS :</mark>&emsp;
+              <i class="fab fa-react"></i>&nbsp;REACT &emsp;
+              <i class="fab fa-node-js"></i>&nbsp;NODE.js&emsp;
+              <i class="fab fa-bootstrap"></i>&nbsp;BootStrap
+            </p>
+            <p>
+              <mark>DATABASES :</mark>&emsp;
+              <i class="fa-brands fa-envira"></i>&nbsp;MONGO DB&emsp;& &emsp;
+              <i class="fa-solid fa-database"></i>&nbsp;MONGOOSE
+            </p>
 
-          <p>
-            <mark>OTHERS :</mark>&emsp; <i class="fab fa-docker"></i>&nbsp;
-            DOCKER &emsp; <i class="fab fa-android"></i> &nbsp;ANDROID DEBUG
-            BRIDGE &emsp; <i class="fab fa-github"></i> &nbsp;GITHUB
-          </p>
+            <p>
+              <mark>OTHERS :</mark>&emsp;<i class="fab fa-github"></i> &nbsp;
+              GITHUB&emsp;POSTMAN &emsp;
+            </p>
+          </div>
         </section>
       </section>
+
+      <!-- ##########   Blog Project Link  ########## -->
       <section class="sect_5">
         <div class="image two">
-          <img src="./images/blog_300px_cropped.jpg" />
-          <h4>Blog</h4>
+          <a href="https://www.github.com" target="_blank">
+            <img src="./images/blog_300px_cropped.jpg"
+          /></a>
+          <h2>Blog</h2>
         </div>
       </section>
+
+      <!-- ##########   Experience Section  ########## -->
       <section class="sect_6">
         <section class="textBox">
-          <h1>EXPERIENCE</h1>
+          <h1>More</h1>
           <br />
           <p>
+            <i class="fas fa-circle"></i>&emsp;
+            <mark>Full Stack Web Developer</mark> <br />
+            <light
+              >&emsp; &nbsp; DCI Digital Career Institute, Berlin. / Nov 2021 –
+              Feb 2023
+            </light>
+            <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-            molestiae fuga impedit cupiditate accusantium odio et asperiores
-            minus veniam officiis eius tempore consequuntur expedita quia ipsam
-            odit neque provident voluptates. Eveniet, ab nesciunt pariatur
-            repudiandae ipsum itaque libero ullam magnam voluptates provident
-            recusandae vel quia. More text to finish out the line.
+            molestiae fuga impedit cupiditate accusantium odio.
+          </p>
+          <p>
+            <i class="fas fa-circle"></i>&emsp;
+            <mark>Training Consultant</mark> <br />
+            <light
+              >&emsp; &nbsp; DCI Digital Career Institute, Berlin. / Nov 2021 –
+              Feb 2023
+            </light>
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            molestiae fuga impedit cupiditate accusantium odio.
           </p>
         </section>
       </section>

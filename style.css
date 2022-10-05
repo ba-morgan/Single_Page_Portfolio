@@ -1,6 +1,10 @@
-/* #### Fonts, If Any #### */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* ##########   Fonts   ################################# */
+/* ##########   Heading Font - "Didact Gothic" ##########*/
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+/* ##########   Heading Font - "Bitter" ##########*/
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap");
+/* ##########   Body Font  - "Poppins"         ##########*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 /* #### Reset CSS #### */
 *,
@@ -10,18 +14,23 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* #### Fix Starting Font Size #### */
-/* html {
+/* #### Fix Root Font Size #### */
+html {
   font-size: 62.5%;
-} */
+}
 
 /* #### Body #### */
 body {
-  font-family: "Helvetica";
-  background-color: #eeeeee;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffdfa;
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/* ##########  Grid Layout  ########## */
 .container {
-  padding: 1rem;
+  padding: 0.8rem;
   width: 100vw;
   height: 100vh;
 
@@ -41,70 +50,74 @@ body {
 section {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: nowrap; */
   justify-content: center;
   align-items: center;
-  /* padding: 10px; */
   border-radius: 0.8rem;
   color: #eaeff2;
 }
 .textBox {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: nowrap; */
   justify-content: start;
   align-items: center;
   width: 100%;
   height: 100%;
-  /* border: 2px solid; */
   text-align: justify;
   color: black;
 }
 
+/* ##########  Text Highlight - Mark ########## */
 mark {
   color: #478091;
-  /* font-size: 2.2rem; */
-  font-weight: bold;
+  font-weight: 500;
   background-color: transparent;
   text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.285);
 }
+light {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
 .textBox h1 {
   font-family: "Didact Gothic", sans-serif;
-  font-size: 2.2rem;
-  letter-spacing: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.6rem;
+  font-variant: small-caps;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
 }
 .textBox h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
   color: #478091;
-  /* letter-spacing: 0.4rem; */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
 }
 .textBox p {
   font-family: "Poppins";
-  font-size: 0.9rem;
+  font-size: 1.7rem;
   font-weight: normal;
-  line-height: 1.2rem;
-  padding: 0.2rem 1rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.05rem;
+}
+h2 {
+  font-family: "Didact Gothic", sans-serif;
+  letter-spacing: 0.4rem;
+  writing-mode: vertical-lr;
+  font-size: 2.6rem;
+  padding: 0.5rem 0 0.5rem 2rem;
 }
 
-section h4 {
+section h2 {
   display: block;
   text-align: center;
-  font-family: "Didact Gothic", sans-serif;
-  padding: 0.5rem 0 0.5rem 1.2rem;
-  font-size: 1.6rem;
-  letter-spacing: 0.5rem;
-  writing-mode: vertical-lr;
-  /* border-radius: 0.4rem; */
-  /* transform: rotate(90deg); */
 }
-.sect_3 h4 {
-  padding: 0.5rem 1.2rem 0.5rem 0;
+.sect_3 h2 {
+  padding: 0.5rem 2rem 0.5rem 0;
 }
 .sect_1 {
+  margin: 1rem 6.5rem;
   grid-area: sect_1;
   background-color: #7d8c87;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
@@ -113,58 +126,146 @@ section h4 {
   grid-area: sect_2;
 }
 .sect_3 {
+  margin: 1rem 6.5rem;
   grid-area: sect_3;
   background-color: #7d8c87;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 .sect_4 {
+  margin-left: 2rem;
   grid-area: sect_4;
 }
 .sect_5 {
+  margin: 1rem 6.5rem;
   grid-area: sect_5;
   background-color: #7f989f;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 .sect_6 {
+  margin-right: 2rem;
   grid-area: sect_6;
 }
 
+/*#### ToolTip for icons ####*/
+/*tooltip Box*/
+.con-tooltip {
+  position: relative;
+  display: inline;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+/*tooltip */
+.tooltip,
+.imagetooltip {
+  visibility: hidden;
+  z-index: 1;
+  opacity: 0.5;
+  width: 13rem;
+  padding: 0.4rem 1rem;
+  background: #478091;
+  position: absolute;
+  top: -150%;
+  left: -25%;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-variant: normal;
+  text-align: center;
+
+  transform: translateY(9px);
+  transition: all 0.3s ease-in-out;
+
+  box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+}
+.imagetooltip {
+  font-size: 1.4rem;
+}
+
+.con-tooltip:hover .tooltip,
+.con-tooltip:hover .imagetooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s linear;
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+/*bottom*/
+.bottom .tooltip {
+  top: -140%;
+  left: 100%;
+}
+.imagebottom .imagetooltip {
+  top: 80%;
+  left: 20%;
+}
+/*#### End Tool Tip ####*/
+
 .contact {
+  margin: 0 1rem;
   font-family: "Poppins";
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   grid-area: contact;
   background-color: #478091;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 500;
   border-radius: 0.4rem;
 }
+.contactsContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 .contactIcons {
-  font-size: 1.2rem;
   text-decoration: none;
   font-weight: normal;
   transition: ease-in-out 0.2s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
 }
 
 .contactIcons a {
   color: #eaeff2;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
 }
 .contactIcons:hover {
-  font-weight: bold;
-  transform: translateX(0.4rem);
+  scale: 1.2;
+  /* transform: translateX(0.4rem); */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
 }
 .copyright {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   font-weight: normal;
 }
-.textBox i {
-  font-size: 1.2rem;
+/*#### Skills Icon & text Size ####*/
+.skillslist {
+  margin: 0;
+  padding: 0;
+}
+.skillslist p {
+  font-size: 1.45rem;
+}
+.skillslist i {
+  font-size: 2.2rem;
+  color: rgb(108, 0, 0);
+}
+
+/*#### Bullet point Size ####*/
+.textBox .fas {
+  font-size: 0.8rem;
   color: rgb(108, 0, 0);
 }
 
@@ -178,23 +279,187 @@ a {
 .image {
   display: flex;
   justify-content: space-between;
-  width: 85%;
-  height: 90%;
+  width: 84%;
+  height: 87%;
   padding: 0.6rem;
-
   transition: ease-in-out 0.2s;
 }
 .image:hover {
   transform: scale(1.02);
 }
 
-/* Responsive Settings Using Media Query */
+/*#### Responsive Settings Using Media Query ####*/
+/*#### Desktop Screens & Large Laptops  1815 px  and above ####*/
 
-/* @media only screen and (max-width: 550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-
-    grid-template-areas: "nav" "side" "main" "content1" "content2" "content3" "footer";
+@media only screen and (max-width: 1815px) {
+  .textBox p {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
-} */
+  .skillslist p {
+    font-size: 1.35rem;
+  }
+  .skillslist i {
+    font-size: 2rem;
+  }
+}
+
+/*#### Responsive Settings Using Media Query ####*/
+/*#### Desktop Screens & Large Laptops  1475 to 1815 px ####*/
+
+@media only screen and (max-width: 1474px) {
+  .textBox p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .skillslist p {
+    font-size: 1.1rem;
+  }
+  .skillslist i {
+    font-size: 1.8rem;
+  }
+  .sect_1 {
+    margin: 1rem 3rem;
+  }
+
+  .sect_3 {
+    margin: 1rem 3rem;
+  }
+
+  .sect_5 {
+    margin: 1rem 3rem;
+  }
+}
+/*#### Responsive Settings Using Media Query ####*/
+/*#### Laptops & Large Tablets  1475 to 1815 px ####*/
+
+@media only screen and (max-width: 1146px) {
+  .textBox p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  h2 {
+    font-size: 2rem;
+    padding: 0 0 0 0.4rem;
+  }
+  .sect_3 h2 {
+    padding: 0 0.4rem 0 0;
+  }
+  .skillslist p {
+    font-size: 1rem;
+  }
+  .skillslist i {
+    font-size: 1.5rem;
+  }
+
+  .sect_1,
+  .sect_3,
+  .sect_5 {
+    margin: 1rem;
+  }
+
+  .image {
+    width: 90%;
+    height: 75%;
+    padding: 0.2rem;
+  }
+}
+
+/*#### Large Phones & Tablets  425 to 768 px ####*/
+
+@media only screen and (max-width: 768px) {
+  .textBox p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+    padding: 0 0 0 0.4rem;
+  }
+  .sect_3 h2 {
+    padding: 0 0.4rem 0 0;
+  }
+
+  .skillslist p {
+    font-size: 0.9rem;
+  }
+  .skillslist i {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    width: 90%;
+    height: 75%;
+    padding: 0.2rem;
+  }
+}
+/*#### Phones  425 px & Under ####*/
+
+@media only screen and (max-width: 426px) {
+  /* #### Body #### */
+  /* body {
+    background-size: cover;
+  } */
+  /* ##########  Grid Layout  ########## */
+  .container {
+    padding: 1rem;
+    max-width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45vh 14vh 45vh 45vh 45vh 45vh 45vh;
+    /*## Grid Areas ##*/
+    grid-template-areas:
+      "sect_2"
+      "contact"
+      "sect_4"
+      "sect_6"
+      "sect_1"
+      "sect_5"
+      "sect_3";
+    grid-gap: 0.5rem;
+  }
+  /* #### Section Margins #### */
+  .sect_1,
+  .sect_2,
+  .sect_3,
+  .sect_4,
+  .sect_5,
+  .sect_6 {
+    margin: 1.2rem;
+  }
+
+  /* #### Font Sizes #### */
+  .textBox p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .skillslist p {
+    font-size: 1.2rem;
+  }
+  .skillslist i {
+    font-size: 1.6rem;
+  }
+  /* #### Contact Icon & Text ####*/
+  .contact {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+    grid-area: contact;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+  }
+  .contactsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contactIcons {
+    padding: 0 3rem;
+  }
+}
+
+/* #### End Of Responsive Media Queries #### */
