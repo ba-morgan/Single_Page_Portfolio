@@ -14,7 +14,7 @@ So all the essentials are immediately visible and easy to read or see. Obviously
 
 I Decided to extend this simplicity to the rest of the project. So a simple structure, simple UI and simple deployment.
 
-This meant no frameworks, no annimation, no menus and no scrolling to find information.
+This meant no frameworks, no animation, no menus and no scrolling to find information.
 
 ## Screen Shot
 
