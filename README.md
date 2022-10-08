@@ -20,6 +20,6 @@ This meant no frameworks, no animation, no menus and no scrolling to find inform
 
 ![Screen Shot](images/Single_Page_Portfolio_ScreenShot.png)
 
-( Simple screen shot to show page )
+( Single Page Screen Shot )
 
 &copy; Morgan Web Development 2022
