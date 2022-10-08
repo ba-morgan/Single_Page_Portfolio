@@ -16,7 +16,7 @@ I decided to extend this simplicity to the rest of the project. So a simple stru
 
 This meant no frameworks, no animation, no menus and no scrolling to find information.
 
-## Screen Shot
+## Screen Shot :
 
 ![Screen Shot](images/Single_Page_Portfolio_ScreenShot.png)
 
