@@ -18,7 +18,8 @@ This meant no frameworks, no animation, no menus and no scrolling to find inform
 
 ## Screen Shot
 
-https://github.com/ba-morgan/Single_Page_Portfolio/blob/main/images/Single_Page_Portfolio_ScreenShot.png
+![Screen Shot](images/
+
 ( Simple screen shot to show page )
 
 &copy; Morgan Web Development 2022
