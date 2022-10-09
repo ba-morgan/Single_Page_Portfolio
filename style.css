@@ -145,7 +145,7 @@ h4 {
 .sect_5 {
   margin: 1rem 6.5rem;
   grid-area: sect_5;
-  background-color: #7f989f;
+  background-color: #5f919f;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 .sect_6 {
@@ -383,9 +383,9 @@ a {
   }
 }
 
-/*#### Large Phones & Tablets  425 to 768 px ####*/
+/*#### Large Phones & Tablets  451 to 800 px ####*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .textBox p {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -415,9 +415,9 @@ a {
     padding: 0.2rem;
   }
 }
-/*#### Phones  425 px & Under ####*/
+/*#### Phones  450 px & Under ####*/
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 450px) {
   /* #### Body #### */
   /* body {
     background-size: cover;
