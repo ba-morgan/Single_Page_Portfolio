@@ -300,18 +300,23 @@ a {
 
 @media only screen and (max-width: 1815px) {
   .textBox p {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
   .skillslist p {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
   }
   .skillslist i {
     font-size: 2rem;
   }
   h4 {
-    font-size: 1.7rem;
-    letter-spacing: 0.13rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+  }
+  .sect_1,
+  .sect_3,
+  .sect_5 {
+    margin: 1rem 3rem;
   }
 }
 
@@ -333,14 +338,8 @@ a {
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
   }
-  .sect_1 {
-    margin: 1rem 3rem;
-  }
-
-  .sect_3 {
-    margin: 1rem 3rem;
-  }
-
+  .sect_1,
+  .sect_3,
   .sect_5 {
     margin: 1rem 3rem;
   }
@@ -383,9 +382,9 @@ a {
   }
 }
 
-/*#### Large Phones & Tablets  500 to 960 px ####*/
+/*#### Large Phones & Tablets  500 to 975 px ####*/
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 975px) {
   .textBox p {
     font-size: 1rem;
     line-height: 1.25rem;
