@@ -383,9 +383,9 @@ a {
   }
 }
 
-/*#### Large Phones & Tablets  451 to 800 px ####*/
+/*#### Large Phones & Tablets  500 to 960 px ####*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   .textBox p {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -415,9 +415,9 @@ a {
     padding: 0.2rem;
   }
 }
-/*#### Phones  450 px & Under ####*/
+/*#### Phones  500 px & Under ####*/
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   /* #### Body #### */
   /* body {
     background-size: cover;
