@@ -12,14 +12,14 @@ As a portfolio is essentially an online Profile / CV, I thought why not make it 
 
 So all the essentials are immediately visible and easy to read or see. Obviously there's not enough space on one page to go into real details about everything, just the essentials.
 
-I Decided to extend this simplicity to the rest of the project. So a simple structure, simple UI and simple deployment.
+I decided to extend this simplicity to the rest of the project. So a simple structure, simple UI and simple deployment.
 
 This meant no frameworks, no animation, no menus and no scrolling to find information.
 
-## Screen Shot
+## Screen Shot :
 
 ![Screen Shot](images/Single_Page_Portfolio_ScreenShot.png)
 
-( Simple screen shot to show page )
+( Single Page Screen Shot )
 
 &copy; Morgan Web Development 2022
