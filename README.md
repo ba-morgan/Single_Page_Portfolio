@@ -2,6 +2,8 @@
 
 A One Page Portfolio Site, with contact & current project links.
 
+#
+
 ## Description :
 
 Yes, you've got me, this site really is just a single page of HTML 5 with a CSS 3 file. It was intentional really !
@@ -20,14 +22,18 @@ This meant no frameworks, no animation, no menus and no scrolling to find inform
 
 The Result is shown below in a screen shot. I hope you enjoy the simplicity.
 
-## Main Page :
-
 #
+
+## Main Page :
 
 ![Screen Shot](images/Single_Page_Portfolio_ScreenShot.png)
 
-( Single Page Screen Shot )
+---
 
-&copy; Morgan Web Development 2022
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![License](https://badgen.net/github/license/micromatch/micromatch)
 
-#
+<div style="text-align: right"> &copy; Morgan Web Development 2022</div>
+
+---

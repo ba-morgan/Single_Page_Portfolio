@@ -66,7 +66,7 @@ section {
   color: black;
 }
 
-/* ##########  Text Highlight - Mark ########## */
+/* ##########  Text & Text Highlight - Mark ########## */
 mark {
   color: #478091;
   font-weight: 500;
@@ -153,42 +153,44 @@ h4 {
   grid-area: sect_6;
 }
 
-/*#### ToolTip for icons ####*/
-/*tooltip Box*/
+/*#### Tool-Tip  ####*/
+/*## Tooltip Box  ##*/
 .con-tooltip {
   position: relative;
   display: inline;
   transition: all 0.3s ease-in-out;
   cursor: default;
 }
-/*tooltip */
+/*## Tooltip Icons & Images ##*/
 .tooltip,
-.imagetooltip {
+.imagetooltip,
+.imagetooltip-right {
   visibility: hidden;
   z-index: 1;
   opacity: 0.5;
-  width: 14rem;
+  width: 16rem;
   padding: 0.4rem 1rem;
-  background: #478091;
+  background: #376472;
   position: absolute;
   top: -150%;
   left: -25%;
   border-radius: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-variant: normal;
   text-align: center;
-
   transform: translateY(9px);
   transition: all 0.3s ease-in-out;
-
   box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
 }
-.imagetooltip {
+.imagetooltip,
+.imagetooltip-right {
   font-size: 1.4rem;
+  letter-spacing: 0.15rem;
 }
 
 .con-tooltip:hover .tooltip,
-.con-tooltip:hover .imagetooltip {
+.con-tooltip:hover .imagetooltip,
+.con-tooltip:hover .imagetooltip-right {
   visibility: visible;
   opacity: 1;
   transition: 0.3s linear;
@@ -208,8 +210,12 @@ h4 {
   left: 100%;
 }
 .imagebottom .imagetooltip {
-  top: 80%;
-  left: 20%;
+  top: 90%;
+  left: 15%;
+}
+.imagetooltip-right {
+  top: 90%;
+  left: 35%;
 }
 /*#### End Tool Tip ####*/
 
