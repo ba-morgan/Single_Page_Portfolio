@@ -34,6 +34,6 @@ The Result is shown below in a screen shot. I hope you enjoy the simplicity.
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![License](https://badgen.net/github/license/micromatch/micromatch)
 
-<div style="text-align: right"> &copy; Morgan Web Development 2022</div>
+<div style="text-align: right"> &copy; Morgan Web Development 2026</div>
 
 ---
