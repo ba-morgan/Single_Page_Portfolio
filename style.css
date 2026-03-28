@@ -1,10 +1,5 @@
 /* ##########   Fonts   ################################# */
-/* ##########   Heading Font - "Didact Gothic" ##########*/
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
-/* ##########   Heading Font - "Bitter" ##########*/
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap");
-/* ##########   Body Font  - "Poppins"         ##########*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* Fonts are loaded via <link> tags in index.html for better performance. */
 
 /* #### Root Variables #### */
 :root {
@@ -235,6 +230,12 @@ light {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
   margin-bottom: 0.8rem;
 }
+.name-title {
+  font-size: clamp(2.75rem, 4.375vw, 5.25rem);
+}
+.name-title::first-letter {
+  font-size: 1.25em;
+}
 .textBox h3 {
   font-family: var(--font-body);
   font-size: clamp(1.5rem, 2vw, 2.2rem);
@@ -349,7 +350,9 @@ h4 {
   color: var(--white);
 }
 
-.con-tooltip:hover .tooltip {
+.con-tooltip:hover .tooltip,
+.con-tooltip:focus .tooltip,
+.con-tooltip:focus-within .tooltip {
   visibility: visible;
   opacity: 1;
   transition: 0.3s linear;
@@ -454,6 +457,16 @@ h4 {
   font-size: 1.8rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
 }
+
+.contactIcons button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--light-text);
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.381);
+  cursor: pointer;
+}
 .contactIcons:hover {
   scale: 1.2;
   /* transform: translateX(0.4rem); */
@@ -507,10 +520,14 @@ img {
   object-fit: contain;
   border-radius: 0.8rem;
 }
-a {
+.image a {
   width: 100%;
   height: 100%;
   border-radius: 0.8rem;
+}
+
+.is-hidden {
+  display: none !important;
 }
 .image {
   display: flex;
@@ -611,6 +628,9 @@ a {
     margin-bottom: 0.2rem;
     letter-spacing: 0.3rem;
   }
+  .name-title {
+    font-size: clamp(1.75rem, 5vh, 4.375rem);
+  }
   .textBox h3 {
     font-size: clamp(1.1rem, 2.5vh, 1.9rem);
     margin-bottom: 0.2rem;
@@ -676,6 +696,7 @@ a {
 @media only screen and (max-width: 600px) {
   body {
     overflow: auto;
+    background-attachment: scroll;
   }
 
   /* ##########  Grid Layout  ########## */
@@ -782,12 +803,17 @@ a {
 #contact-form-container {
   width: 100%;
   height: 100%;
+  min-height: 36rem;
   padding: 1.5rem 2.5rem;
   position: relative;
   display: none;
   flex-direction: column;
   justify-content: center;
   overflow-y: auto;
+}
+
+#contact-form-container.is-active {
+  display: flex;
 }
 
 .close-button {
@@ -798,6 +824,9 @@ a {
   font-size: 2.8rem;
   font-weight: bold;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
   transition: color 0.3s ease;
   line-height: 1;
   z-index: 10;

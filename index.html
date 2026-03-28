@@ -5,6 +5,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Morgan Web Development portfolio. A single-page showcase of projects, skills, and contact details."
+    />
+
+    <meta property="og:title" content="Morgan Web Development" />
+    <meta
+      property="og:description"
+      content="A single-page portfolio showcasing projects, skills, and ways to connect."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/Single_Page_Portfolio_ScreenShot.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Morgan Web Development" />
+    <meta
+      name="twitter:description"
+      content="A single-page portfolio showcasing projects, skills, and ways to connect."
+    />
+    <meta name="twitter:image" content="./images/Single_Page_Portfolio_ScreenShot.png" />
 
     <!-- #### Favourite Icon Image #### -->
     <link
@@ -12,15 +32,19 @@
       href="./images/favicon.ico"
       type="image/x-icon"
     />
-    <!-- #### Font Awesome V5 & V6 Links #### -->
-    <script
-      src="https://kit.fontawesome.com/891cde5a15.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- #### Font Awesome V6 Kit #### -->
     <script
       src="https://kit.fontawesome.com/9c406554d7.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- #### Google Fonts #### -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Bitter:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- #### CSS Sheet Link #### -->
     <link href="./style.css" rel="stylesheet" />
@@ -50,7 +74,7 @@
       </section>
       <section class="sect_2">
         <section class="textBox">
-          <h1>MORGAN</h1>
+          <h1 class="name-title">MORGAN</h1>
           <h3>Web Development</h3>
           <!-- ##########   Profile Section ########## -->
           <h4>Hi I'm Byron, a Creative & Adaptable Developer.</h4>
@@ -87,28 +111,28 @@
       <!-- ##########   Skills Badges Section  ########## -->
       <section class="skills-badges">
         <div class="skillsContainer">
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fab fa-js"></i><span class="tooltip">JavaScript <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
           </div>
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fab fa-html5"></i><span class="tooltip">HTML5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
           </div>
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fab fa-css3"></i><span class="tooltip">CSS3 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
           </div>
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fab fa-react"></i><span class="tooltip">React <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
           </div>
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fab fa-node-js"></i><span class="tooltip">Node.js <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
           </div>
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fa-solid fa-database"></i><span class="tooltip">MongoDB <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
           </div>
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fab fa-github"></i><span class="tooltip">GitHub <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
           </div>
-          <div class="skillsIcon con-tooltip bottom">
+          <div class="skillsIcon con-tooltip bottom" tabindex="0">
             <i class="fab fa-bootstrap"></i><span class="tooltip">Bootstrap <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
           </div>
         </div>
@@ -118,17 +142,23 @@
       <section class="contact">
         <div class="contact-text">Let's Connect :</div>
         <div class="contactsContainer">
-          <div class="contactIcons con-tooltip bottom">
-            <a href="javascript:void(0)" id="contact-form-trigger"
-              ><i class="fa-solid fa-envelope"></i></a
-            ><span class="tooltip">Send Me an Email</span>
+          <div class="contactIcons con-tooltip bottom" tabindex="0">
+            <button
+              type="button"
+              id="contact-form-trigger"
+              aria-expanded="false"
+              aria-controls="contact-form-container"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </button>
+            <span class="tooltip">Send Me an Email</span>
           </div>
-          <div class="contactIcons con-tooltip bottom">
+          <div class="contactIcons con-tooltip bottom" tabindex="0">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
               ><i class="fa-brands fa-linkedin"></i></a
             ><span class="tooltip">Visit My LinkedIn Page</span>
           </div>
-          <div class="contactIcons con-tooltip bottom">
+          <div class="contactIcons con-tooltip bottom" tabindex="0">
             <a href="https://github.com/ba-morgan" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github"></i></a
             ><span class="tooltip">Visit My GitHub Page</span>
@@ -170,10 +200,10 @@
         </div>
 
         <!-- Contact Form Container (Initially Hidden) -->
-        <div id="contact-form-container" style="display: none;">
-          <span class="close-button">&times;</span>
+        <div id="contact-form-container" aria-hidden="true">
+          <button type="button" class="close-button" aria-label="Close contact form">&times;</button>
           <form id="contact-form" action="https://formspree.io/f/mjvvezra" method="POST">
-            <h2>Message Me</h2>
+            <h2>Contact Me</h2>
             <div class="form-group">
               <input type="text" name="name" placeholder="Name" required />
             </div>
@@ -184,7 +214,7 @@
               <textarea name="message" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" id="submit-btn">Send Message</button>
-            <div id="form-status"></div>
+            <div id="form-status" aria-live="polite"></div>
           </form>
         </div>
       </section>
@@ -218,99 +248,6 @@
     </main>
 
     <!-- #### Theme Toggle & Contact Form Scripts #### -->
-    <script>
-      const themeToggle = document.getElementById('theme-toggle');
-      const icon = themeToggle.querySelector('i');
-      const body = document.body;
-
-      // Check for saved theme preference
-      const currentTheme = localStorage.getItem('theme');
-      if (currentTheme) {
-        body.setAttribute('data-theme', currentTheme);
-        if (currentTheme === 'dark') {
-          icon.classList.replace('fa-moon', 'fa-sun');
-        }
-      }
-
-      themeToggle.addEventListener('click', () => {
-        let theme = 'light';
-        if (body.getAttribute('data-theme') !== 'dark') {
-          body.setAttribute('data-theme', 'dark');
-          icon.classList.replace('fa-moon', 'fa-sun');
-          theme = 'dark';
-        } else {
-          body.removeAttribute('data-theme');
-          icon.classList.replace('fa-sun', 'fa-moon');
-        }
-        localStorage.setItem('theme', theme);
-      });
-
-      // --- Contact Form Toggle Logic ---
-      const portfolioContent = document.getElementById('portfolio-content');
-      const contactFormContainer = document.getElementById('contact-form-container');
-      const contactTrigger = document.getElementById('contact-form-trigger');
-      const closeContact = contactFormContainer.querySelector('.close-button');
-
-      contactTrigger.onclick = function() {
-        portfolioContent.style.display = "none";
-        contactFormContainer.style.display = "flex";
-      }
-
-      closeContact.onclick = function() {
-        contactFormContainer.style.display = "none";
-        portfolioContent.style.display = "flex";
-      }
-
-      // --- AJAX Form Submission ---
-      const form = document.getElementById("contact-form");
-      
-      async function handleSubmit(event) {
-        event.preventDefault();
-        const status = document.getElementById("form-status");
-        const submitBtn = document.getElementById("submit-btn");
-        const data = new FormData(event.target);
-        
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = "Sending...";
-        
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json'
-          }
-        }).then(response => {
-          if (response.ok) {
-            status.innerHTML = "Thanks for your message!";
-            status.style.color = "green";
-            form.reset();
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = "Send Message";
-            setTimeout(() => {
-              contactFormContainer.style.display = "none";
-              portfolioContent.style.display = "flex";
-              status.innerHTML = "";
-            }, 3000);
-          } else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-              } else {
-                status.innerHTML = "Oops! There was a problem";
-              }
-              status.style.color = "red";
-              submitBtn.disabled = false;
-              submitBtn.innerHTML = "Send Message";
-            })
-          }
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem";
-          status.style.color = "red";
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Message";
-        });
-      }
-      form.addEventListener("submit", handleSubmit);
-    </script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
