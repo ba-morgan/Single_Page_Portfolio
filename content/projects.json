@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "id": "bugify",
+      "name": "Bugify",
+      "href": "https://www.github.com",
+      "image": "./images/Bugify.jpg",
+      "alt": "Screenshot of Bugify project",
+      "overlayTitle": "Bugify",
+      "overlayParagraphs": [
+        "A robust bug tracking system designed to help development teams manage, track, and resolve software defects efficiently.",
+        "Built with a focus on user experience and real-time collaboration, it features comprehensive reporting tools and seamless integration with existing workflows."
+      ],
+      "labelPosition": "after"
+    },
+    {
+      "id": "devshed",
+      "name": "DevShed",
+      "href": "https://www.github.com",
+      "image": "./images/DevShed.jpg",
+      "alt": "Screenshot of DevShed project",
+      "overlayTitle": "DevShed",
+      "overlayParagraphs": [
+        "A collaborative platform for developers to share code snippets, project ideas, and resources with the community.",
+        "It provides a space for developers to connect, learn from each other, and showcase their latest experiments in a supportive environment."
+      ],
+      "labelPosition": "before"
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "href": "https://www.github.com",
+      "image": "./images/React_Portfolio.jpg",
+      "alt": "Screenshot of Portfolio project",
+      "overlayTitle": "Portfolio",
+      "overlayParagraphs": [
+        "A modern, responsive single-page portfolio built with HTML5 and CSS3, showcasing various projects and web development skills.",
+        "This project demonstrates my proficiency in creating clean, maintainable code and my eye for design, ensuring a great user experience across all devices."
+      ],
+      "labelPosition": "after"
+    }
+  ]
+}

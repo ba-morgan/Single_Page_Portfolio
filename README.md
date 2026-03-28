@@ -1,37 +1,28 @@
 # Single Page Portfolio
 
-A One Page Portfolio Site, with contact & current project links.
+A single-page portfolio site with project cards, skills, and a contact form.
 
-#
+## Description
 
-## Description :
+This project is intentionally lightweight and static: plain HTML, CSS, and a small JavaScript file. It presents the essentials of a CV-style portfolio without extra navigation or build tooling. The UI includes a dark/light theme toggle, animated section reveals, tooltip skill badges, and an inline contact form powered by Formspree.
 
-Yes, you've got me, this site really is just a single page of HTML 5 with a CSS 3 file. It was intentional really !
-
-For me this was a short experiment in simplicity. I wanted to see just how simply I could produce a portfolio site.
-
-As a portfolio is essentially an online Profile or CV.
-I thought, why not make it like a simple one-page flyer or CV,
-instead of a site where you have to spend time scrolling through or finding your way around multiple menus.
-
-All the essentials are immediately visible and easy to read or see. Obviously there's not enough space on one page to go into real details about everything, just the essentials.
-
-I decided to extend this simplicity to the rest of the project. So a simple structure, simple UI and simple deployment.
-
-This meant no frameworks, no animation, no menus and no scrolling to find information.
-
-The Result is shown below in a screen shot. I hope you enjoy the simplicity.
-
-#
-
-## Main Page :
+## Main Page
 
 ![Screen Shot](images/Single_Page_Portfolio_ScreenShot.png)
+
+## Getting Started
+
+Open `index.html` directly in a browser, or use a simple static server like the VS Code Live Server extension. No Node.js runtime or build step is required for the site itself.
+
+## Notes
+
+The contact form posts to Formspree. Update the `action` URL in `index.html` if you want messages delivered to a different inbox.
 
 ---
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
 ![License](https://badgen.net/github/license/micromatch/micromatch)
 
 <div style="text-align: right"> &copy; Morgan Web Development 2026</div>

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Morgan Web Development",
+    "description": "Morgan Web Development portfolio. A single-page showcase of projects, skills, and contact details.",
+    "og": {
+      "title": "Morgan Web Development",
+      "description": "A single-page portfolio showcasing projects, skills, and ways to connect.",
+      "type": "website",
+      "image": "./images/Single_Page_Portfolio_ScreenShot.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Morgan Web Development",
+      "description": "A single-page portfolio showcasing projects, skills, and ways to connect.",
+      "image": "./images/Single_Page_Portfolio_ScreenShot.png"
+    }
+  },
+  "themeToggle": {
+    "title": "Toggle Dark/Light Mode"
+  },
+  "profile": {
+    "name": "MORGAN",
+    "subtitle": "Web Development",
+    "headline": "Hi I'm Byron, a Creative & Adaptable Developer.",
+    "paragraphs": [
+      "Looking for an <mark>Interesting</mark> new Position to broaden my development skills.",
+      "Experience has taught me that one of the most useful skills to have is Adaptability, to help you take on new challenges & grow.",
+      "Please feel free to check out some <mark>Live Demo's</mark> of my work or view the code directly on my <mark>Github page</mark>."
+    ]
+  },
+  "skillsSection": {
+    "title": "Skills",
+    "paragraphs": [
+      "Soon to Qualify, having completed a <mark>1-Year</mark> Full-Time Intensive <mark>MERN Stack</mark> Development course, at the DCI in Berlin.",
+      "Currently I'm working hard on a 2-Month long, team project and learning <mark>NEXT.js</mark> in the process."
+    ]
+  },
+  "moreSection": {
+    "title": "More...",
+    "paragraphs": [
+      "Originally from a small town in Wales, my natural curiosity has led me on a journey that includes a <mark>PhD in Physics</mark> and working in diverse areas such as Satellite Phones, OLED Displays and PC-ram.",
+      "I've lived & worked in the UK, Holland and currently <mark>Dresden Germany</mark>, where I've embarked on the latest chapter of this continuing journey, in Web Development.",
+      "If you have any questions or just want more information then please contact me or just say Hello."
+    ]
+  },
+  "contactBar": {
+    "label": "Let's Connect :"
+  },
+  "footer": "&copy; Morgan Web Development 2026"
+}

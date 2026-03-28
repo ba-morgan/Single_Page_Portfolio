@@ -1,0 +1,38 @@
+{
+  "links": [
+    {
+      "id": "contact-form-trigger",
+      "type": "button",
+      "iconClass": "fa-solid fa-envelope",
+      "tooltip": "Send Me an Email",
+      "ariaLabel": "Send me an email"
+    },
+    {
+      "type": "link",
+      "iconClass": "fa-brands fa-linkedin",
+      "tooltip": "Visit My LinkedIn Page",
+      "ariaLabel": "Visit my LinkedIn page",
+      "href": "https://www.linkedin.com"
+    },
+    {
+      "type": "link",
+      "iconClass": "fa-brands fa-github",
+      "tooltip": "Visit My GitHub Page",
+      "ariaLabel": "Visit my GitHub page",
+      "href": "https://github.com/ba-morgan"
+    }
+  ],
+  "form": {
+    "title": "Message Me",
+    "action": "https://formspree.io/f/mjvvezra",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Your Message"
+    },
+    "submitLabel": "Send Message",
+    "sendingLabel": "Sending...",
+    "successMessage": "Thanks for your message!",
+    "errorMessage": "Oops! There was a problem"
+  }
+}

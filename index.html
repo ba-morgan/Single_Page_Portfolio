@@ -52,168 +52,64 @@
 
   <body>
     <!-- #### Theme Toggle #### -->
-    <div class="theme-toggle" id="theme-toggle" title="Toggle Dark/Light Mode">
+    <div class="theme-toggle" id="theme-toggle" title="" aria-label="">
       <i class="fas fa-moon"></i>
     </div>
 
     <main class="container">
       <section class="sect_1">
-        <div class="image one">
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-            <img src="./images/Bugify.jpg" alt="Screenshot of Bugify project" loading="lazy" />
-            <div class="project-overlay">
-              <div class="overlay-content">
-                <h3>Bugify</h3>
-                <p>A robust bug tracking system designed to help development teams manage, track, and resolve software defects efficiently.</p>
-                <p>Built with a focus on user experience and real-time collaboration, it features comprehensive reporting tools and seamless integration with existing workflows.</p>
-              </div>
-            </div>
-          </a>
-          <h2>Bugify</h2>
-        </div>
+        <div class="image one" data-project-id="bugify"></div>
       </section>
       <section class="sect_2">
-        <section class="textBox">
-          <h1 class="name-title">MORGAN</h1>
-          <h3>Web Development</h3>
+        <section class="textBox" id="profile-section">
+          <h1 class="name-title" id="profile-name"></h1>
+          <h3 id="profile-subtitle"></h3>
           <!-- ##########   Profile Section ########## -->
-          <h4>Hi I'm Byron, a Creative & Adaptable Developer.</h4>
-          <p>
-            Looking for an <mark>Interesting</mark> new Position to broaden my
-            development skills.
-          </p>
-          <p>
-            Experience has taught me that one of the most useful skills to have
-            is Adaptability, to help you take on new challenges & grow.
-          </p>
-          <p>
-            Please feel free to check out some <mark>Live Demo's</mark> of my
-            work or view the code directly on my <mark> Github page</mark>.
-          </p>
+          <h4 id="profile-headline"></h4>
+          <div id="profile-paragraphs"></div>
         </section>
       </section>
       <!-- ##########   DevShed Project Link  ########## -->
       <section class="sect_3">
-        <div class="image three">
-          <h2>DevShed</h2>
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-            <img src="./images/DevShed.jpg" alt="Screenshot of DevShed project" loading="lazy" />
-            <div class="project-overlay">
-              <div class="overlay-content">
-                <h3>DevShed</h3>
-                <p>A collaborative platform for developers to share code snippets, project ideas, and resources with the community.</p>
-                <p>It provides a space for developers to connect, learn from each other, and showcase their latest experiments in a supportive environment.</p>
-              </div>
-            </div>
-          </a>
-        </div>
+        <div class="image three" data-project-id="devshed"></div>
       </section>
       <!-- ##########   Skills Badges Section  ########## -->
       <section class="skills-badges">
-        <div class="skillsContainer">
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fab fa-js"></i><span class="tooltip">JavaScript <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-          </div>
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fab fa-html5"></i><span class="tooltip">HTML5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-          </div>
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fab fa-css3"></i><span class="tooltip">CSS3 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
-          </div>
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fab fa-react"></i><span class="tooltip">React <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-          </div>
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fab fa-node-js"></i><span class="tooltip">Node.js <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
-          </div>
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fa-solid fa-database"></i><span class="tooltip">MongoDB <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
-          </div>
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fab fa-github"></i><span class="tooltip">GitHub <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
-          </div>
-          <div class="skillsIcon con-tooltip bottom" tabindex="0">
-            <i class="fab fa-bootstrap"></i><span class="tooltip">Bootstrap <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
-          </div>
-        </div>
+        <div class="skillsContainer" id="skills-badges"></div>
       </section>
 
       <!-- ##########   Contact Section  ########## -->
       <section class="contact">
-        <div class="contact-text">Let's Connect :</div>
-        <div class="contactsContainer">
-          <div class="contactIcons con-tooltip bottom" tabindex="0">
-            <button
-              type="button"
-              id="contact-form-trigger"
-              aria-expanded="false"
-              aria-controls="contact-form-container"
-            >
-              <i class="fa-solid fa-envelope"></i>
-            </button>
-            <span class="tooltip">Send Me an Email</span>
-          </div>
-          <div class="contactIcons con-tooltip bottom" tabindex="0">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-              ><i class="fa-brands fa-linkedin"></i></a
-            ><span class="tooltip">Visit My LinkedIn Page</span>
-          </div>
-          <div class="contactIcons con-tooltip bottom" tabindex="0">
-            <a href="https://github.com/ba-morgan" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i></a
-            ><span class="tooltip">Visit My GitHub Page</span>
-          </div>
-        </div>
-
+        <div class="contact-text" id="contact-text"></div>
+        <div class="contactsContainer" id="contacts-container"></div>
       </section>
       <!-- ##########   Skills Section  ########## -->
       <section class="sect_4">
-        <section class="textBox">
-          <h1>Skills</h1>
-          <p>
-            Soon to Qualify, having completed a
-            <mark>1-Year</mark> Full-Time Intensive
-            <mark>MERN Stack</mark> Development course, at the DCI in Berlin.
-          </p>
-          <p>
-            Currently I’m working hard on a 2-Month long, team project and
-            learning <mark>NEXT.js</mark> in the process.
-          </p>
-
+        <section class="textBox" id="skills-section">
+          <h1 id="skills-title"></h1>
+          <div id="skills-paragraphs"></div>
         </section>
       </section>
 
       <!-- ##########   Portfolio Project Link  ########## -->
       <section class="sect_5">
-        <div id="portfolio-content" class="image two">
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-            <img src="./images/React_Portfolio.jpg" alt="Screenshot of Portfolio project"  loading="lazy" />
-            <div class="project-overlay">
-              <div class="overlay-content">
-                <h3>Portfolio</h3>
-                <p>A modern, responsive single-page portfolio built with HTML5 and CSS3, showcasing various projects and web development skills.</p>
-                <p>This project demonstrates my proficiency in creating clean, maintainable code and my eye for design, ensuring a great user experience across all devices.</p>
-              </div>
-            </div>
-          </a>
-          <h2>Portfolio</h2>
-        </div>
+        <div id="portfolio-content" class="image two" data-project-id="portfolio"></div>
 
         <!-- Contact Form Container (Initially Hidden) -->
         <div id="contact-form-container" aria-hidden="true">
           <button type="button" class="close-button" aria-label="Close contact form">&times;</button>
-          <form id="contact-form" action="https://formspree.io/f/mjvvezra" method="POST">
-            <h2>Contact Me</h2>
+          <form id="contact-form" action="" method="POST">
+            <h2 id="contact-form-title"></h2>
             <div class="form-group">
-              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="name" placeholder="" required />
             </div>
             <div class="form-group">
-              <input type="email" name="email" placeholder="Email" required />
+              <input type="email" name="email" placeholder="" required />
             </div>
             <div class="form-group">
-              <textarea name="message" placeholder="Your Message" required></textarea>
+              <textarea name="message" placeholder="" required></textarea>
             </div>
-            <button type="submit" id="submit-btn">Send Message</button>
+            <button type="submit" id="submit-btn"></button>
             <div id="form-status" aria-live="polite"></div>
           </form>
         </div>
@@ -221,29 +117,15 @@
 
       <!-- ##########   Experience Section  ########## -->
       <section class="sect_6">
-        <section class="textBox">
-          <h1>More...</h1>
-          <p>
-            Originally from a small town in Wales, my natural curiosity has led
-            me on a journey that includes a <mark>PhD in Physics</mark> and
-            working in diverse areas such as Satellite Phones, OLED Displays and
-            PC-ram.
-          </p>
-          <p>
-            I’ve lived & worked in the UK, Holland and currently
-            <mark> Dresden Germany</mark>, where I’ve embarked on the latest
-            chapter of this continuing journey, in Web Development.
-          </p>
-          <p>
-            If you have any questions or just want more information then please
-            contact me or just say Hello.
-          </p>
+        <section class="textBox" id="more-section">
+          <h1 id="more-title"></h1>
+          <div id="more-paragraphs"></div>
         </section>
       </section>
 
       <!-- ##########   Footer  ########## -->
       <footer class="footer">
-        &copy; Morgan Web Development 2026
+        <span id="footer-text"></span>
       </footer>
     </main>
 

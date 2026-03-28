@@ -1,0 +1,44 @@
+{
+  "skills": [
+    {
+      "label": "JavaScript",
+      "iconClass": "fab fa-js",
+      "rating": 5
+    },
+    {
+      "label": "HTML5",
+      "iconClass": "fab fa-html5",
+      "rating": 5
+    },
+    {
+      "label": "CSS3",
+      "iconClass": "fab fa-css3",
+      "rating": 4
+    },
+    {
+      "label": "React",
+      "iconClass": "fab fa-react",
+      "rating": 5
+    },
+    {
+      "label": "Node.js",
+      "iconClass": "fab fa-node-js",
+      "rating": 4
+    },
+    {
+      "label": "MongoDB",
+      "iconClass": "fa-solid fa-database",
+      "rating": 3
+    },
+    {
+      "label": "GitHub",
+      "iconClass": "fab fa-github",
+      "rating": 4
+    },
+    {
+      "label": "Bootstrap",
+      "iconClass": "fab fa-bootstrap",
+      "rating": 3
+    }
+  ]
+}
