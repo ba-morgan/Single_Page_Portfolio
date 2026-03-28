@@ -6,13 +6,13 @@
       "title": "Morgan Web Development",
       "description": "A single-page portfolio showcasing projects, skills, and ways to connect.",
       "type": "website",
-      "image": "./images/Single_Page_Portfolio_ScreenShot.png"
+      "image": "/images/Single_Page_Portfolio_ScreenShot.png"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Morgan Web Development",
       "description": "A single-page portfolio showcasing projects, skills, and ways to connect.",
-      "image": "./images/Single_Page_Portfolio_ScreenShot.png"
+      "image": "/images/Single_Page_Portfolio_ScreenShot.png"
     }
   },
   "themeToggle": {
@@ -20,7 +20,7 @@
   },
   "profile": {
     "name": "MORGAN",
-    "subtitle": "Web Development",
+    "subtitle": "Big load of old Crap",
     "headline": "Hi I'm Byron, a Creative & Adaptable Developer.",
     "paragraphs": [
       "Looking for an <mark>Interesting</mark> new Position to broaden my development skills.",
