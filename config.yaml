@@ -1,0 +1,249 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: site
+    label: Site Settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: meta
+        label: Meta
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: og
+            label: Open Graph
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: type
+                label: Type
+                type: string
+              - name: image
+                label: Image
+                type: image
+          - name: twitter
+            label: Twitter
+            type: object
+            fields:
+              - name: card
+                label: Card
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: image
+                label: Image
+                type: image
+      - name: themeToggle
+        label: Theme Toggle
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+      - name: profile
+        label: Profile
+        type: object
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: paragraphs
+            label: Paragraphs
+            type: text
+            list: true
+            description: Supports inline HTML like <mark>.
+      - name: skillsSection
+        label: Skills Section
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: paragraphs
+            label: Paragraphs
+            type: text
+            list: true
+            description: Supports inline HTML like <mark>.
+      - name: moreSection
+        label: More Section
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: paragraphs
+            label: Paragraphs
+            type: text
+            list: true
+            description: Supports inline HTML like <mark>.
+      - name: contactBar
+        label: Contact Bar
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+      - name: footer
+        label: Footer
+        type: text
+        description: Supports inline HTML.
+
+  - name: projects
+    label: Projects
+    type: file
+    path: content/projects.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: ID
+            type: string
+          - name: name
+            label: Name
+            type: string
+          - name: href
+            label: Link
+            type: string
+          - name: image
+            label: Image
+            type: image
+          - name: alt
+            label: Alt Text
+            type: string
+          - name: overlayTitle
+            label: Overlay Title
+            type: string
+          - name: overlayParagraphs
+            label: Overlay Paragraphs
+            type: text
+            list: true
+          - name: labelPosition
+            label: Label Position
+            type: select
+            options:
+              - before
+              - after
+
+  - name: skills
+    label: Skills Badges
+    type: file
+    path: content/skills.json
+    format: json
+    fields:
+      - name: skills
+        label: Skills
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: iconClass
+            label: Icon Class
+            type: string
+          - name: rating
+            label: Rating
+            type: number
+            description: 1-5
+
+  - name: contact
+    label: Contact
+    type: file
+    path: content/contact.json
+    format: json
+    fields:
+      - name: links
+        label: Links
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: ID
+            type: string
+            description: Only required for the form button.
+          - name: type
+            label: Type
+            type: select
+            options:
+              - button
+              - link
+          - name: iconClass
+            label: Icon Class
+            type: string
+          - name: tooltip
+            label: Tooltip
+            type: string
+          - name: ariaLabel
+            label: Aria Label
+            type: string
+          - name: href
+            label: Link URL
+            type: string
+            description: Only used for link items.
+      - name: form
+        label: Form
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: action
+            label: Action URL
+            type: string
+          - name: fields
+            label: Fields
+            type: object
+            fields:
+              - name: name
+                label: Name Placeholder
+                type: string
+              - name: email
+                label: Email Placeholder
+                type: string
+              - name: message
+                label: Message Placeholder
+                type: string
+          - name: submitLabel
+            label: Submit Label
+            type: string
+          - name: sendingLabel
+            label: Sending Label
+            type: string
+          - name: successMessage
+            label: Success Message
+            type: text
+          - name: errorMessage
+            label: Error Message
+            type: text
+
+settings:
+  content:
+    merge: true
